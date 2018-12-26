@@ -8,10 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D39E3DF821D3D0B2007AF2A9 /* ImageHelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39E3DF721D3D0B2007AF2A9 /* ImageHelloWorld.cpp */; };
+		D39E3E0C21D3ED8F007AF2A9 /* RayPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39E3E0B21D3ED8F007AF2A9 /* RayPlane.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D39E3E0F21D3F22F007AF2A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39E3DEC21D3D0B2007AF2A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D39E3DF321D3D0B2007AF2A9;
+			remoteInfo = RayTracingOneWeekEnd;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D39E3DF221D3D0B2007AF2A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D39E3E0221D3ED46007AF2A9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,10 +46,20 @@
 		D39E3DF421D3D0B2007AF2A9 /* RayTracingOneWeekEnd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracingOneWeekEnd; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39E3DF721D3D0B2007AF2A9 /* ImageHelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageHelloWorld.cpp; sourceTree = "<group>"; };
 		D39E3DFE21D3DBCB007AF2A9 /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
+		D39E3DFF21D3E241007AF2A9 /* ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ray.h; sourceTree = "<group>"; };
+		D39E3E0421D3ED46007AF2A9 /* RayPlane */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayPlane; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39E3E0B21D3ED8F007AF2A9 /* RayPlane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RayPlane.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D39E3DF121D3D0B2007AF2A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39E3E0121D3ED46007AF2A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				D39E3DF621D3D0B2007AF2A9 /* RayTracingOneWeekEnd */,
+				D39E3E0521D3ED46007AF2A9 /* RayPlane */,
 				D39E3DF521D3D0B2007AF2A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				D39E3DF421D3D0B2007AF2A9 /* RayTracingOneWeekEnd */,
+				D39E3E0421D3ED46007AF2A9 /* RayPlane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +92,17 @@
 			children = (
 				D39E3DF721D3D0B2007AF2A9 /* ImageHelloWorld.cpp */,
 				D39E3DFE21D3DBCB007AF2A9 /* vec3.h */,
+				D39E3DFF21D3E241007AF2A9 /* ray.h */,
 			);
 			path = RayTracingOneWeekEnd;
+			sourceTree = "<group>";
+		};
+		D39E3E0521D3ED46007AF2A9 /* RayPlane */ = {
+			isa = PBXGroup;
+			children = (
+				D39E3E0B21D3ED8F007AF2A9 /* RayPlane.cpp */,
+			);
+			path = RayPlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +125,24 @@
 			productReference = D39E3DF421D3D0B2007AF2A9 /* RayTracingOneWeekEnd */;
 			productType = "com.apple.product-type.tool";
 		};
+		D39E3E0321D3ED46007AF2A9 /* RayPlane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39E3E0821D3ED46007AF2A9 /* Build configuration list for PBXNativeTarget "RayPlane" */;
+			buildPhases = (
+				D39E3E0021D3ED46007AF2A9 /* Sources */,
+				D39E3E0121D3ED46007AF2A9 /* Frameworks */,
+				D39E3E0221D3ED46007AF2A9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39E3E1021D3F22F007AF2A9 /* PBXTargetDependency */,
+			);
+			name = RayPlane;
+			productName = RayPlane;
+			productReference = D39E3E0421D3ED46007AF2A9 /* RayPlane */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +153,9 @@
 				ORGANIZATIONNAME = "Alberto Lirussi";
 				TargetAttributes = {
 					D39E3DF321D3D0B2007AF2A9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D39E3E0321D3ED46007AF2A9 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,6 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D39E3E0321D3ED46007AF2A9 /* RayPlane */,
 				D39E3DF321D3D0B2007AF2A9 /* RayTracingOneWeekEnd */,
 			);
 		};
@@ -124,7 +187,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D39E3E0021D3ED46007AF2A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39E3E0C21D3ED8F007AF2A9 /* RayPlane.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D39E3E1021D3F22F007AF2A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D39E3DF321D3D0B2007AF2A9 /* RayTracingOneWeekEnd */;
+			targetProxy = D39E3E0F21D3F22F007AF2A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D39E3DF921D3D0B2007AF2A9 /* Debug */ = {
@@ -256,6 +335,24 @@
 			};
 			name = Release;
 		};
+		D39E3E0921D3ED46007AF2A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KMTWE72HD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D39E3E0A21D3ED46007AF2A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KMTWE72HD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -273,6 +370,15 @@
 			buildConfigurations = (
 				D39E3DFC21D3D0B2007AF2A9 /* Debug */,
 				D39E3DFD21D3D0B2007AF2A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D39E3E0821D3ED46007AF2A9 /* Build configuration list for PBXNativeTarget "RayPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39E3E0921D3ED46007AF2A9 /* Debug */,
+				D39E3E0A21D3ED46007AF2A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
