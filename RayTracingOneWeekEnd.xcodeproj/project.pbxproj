@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D39E3DF821D3D0B2007AF2A9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39E3DF721D3D0B2007AF2A9 /* main.cpp */; };
+		D39E3DF821D3D0B2007AF2A9 /* ImageHelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39E3DF721D3D0B2007AF2A9 /* ImageHelloWorld.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		D39E3DF421D3D0B2007AF2A9 /* RayTracingOneWeekEnd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracingOneWeekEnd; sourceTree = BUILT_PRODUCTS_DIR; };
-		D39E3DF721D3D0B2007AF2A9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D39E3DF721D3D0B2007AF2A9 /* ImageHelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageHelloWorld.cpp; sourceTree = "<group>"; };
+		D39E3DFE21D3DBCB007AF2A9 /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		D39E3DF621D3D0B2007AF2A9 /* RayTracingOneWeekEnd */ = {
 			isa = PBXGroup;
 			children = (
-				D39E3DF721D3D0B2007AF2A9 /* main.cpp */,
+				D39E3DF721D3D0B2007AF2A9 /* ImageHelloWorld.cpp */,
+				D39E3DFE21D3DBCB007AF2A9 /* vec3.h */,
 			);
 			path = RayTracingOneWeekEnd;
 			sourceTree = "<group>";
@@ -118,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39E3DF821D3D0B2007AF2A9 /* main.cpp in Sources */,
+				D39E3DF821D3D0B2007AF2A9 /* ImageHelloWorld.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
