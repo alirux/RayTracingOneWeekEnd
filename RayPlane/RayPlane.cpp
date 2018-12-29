@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <fstream>
 #include "vec3.h"
 #include "ray.h"
 
@@ -19,7 +20,8 @@ vec3 color(const ray& r) {
 int main(int argc, const char * argv[]) {
     int nx = 200;   // Number of columns
     int ny = 100;   // Number of rows
-    std::cout << "P3\n" << nx << " " << ny << "\n255\n"; // Header: P3, #cols #rows, max color (255)
+    std::ofstream imageFile((argc <= 1) ? "image.ppm" : argv[1], std::fstream::out);
+    imageFile << "P3\n" << nx << " " << ny << "\n255\n"; // Header: P3, #cols #rows, max color (255)
     
     vec3 lower_left_corner(-2.0, -1.0, -1.0);
     vec3 horizontal(4.0, 0.0, 0.0);
@@ -40,8 +42,9 @@ int main(int argc, const char * argv[]) {
             int ir = int(255.0*col[0]);
             int ig = int(255.0*col[1]);
             int ib = int(255.0*col[2]);
-            std::cout << ir << " " << ig << " " << ib << "   ";
+            imageFile << ir << " " << ig << " " << ib << "   ";
         }
-        std::cout << "\n";  // Next row
+        imageFile << "\n";  // Next row
     }
+    imageFile.close();
 }
